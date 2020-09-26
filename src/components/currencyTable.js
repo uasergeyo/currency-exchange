@@ -1,14 +1,23 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import TABLE_ROW_W from './wrappers/tableRow_w'
 
 function CurrencyTable(props) {
+
+    const [hyphonetion,setHyphonetion] = useState(false)
+    useEffect(()=>{
+        if(window.innerWidth < 578){
+            setHyphonetion(true)
+        }else{
+            setHyphonetion(false)
+        }
+    },[window.innerWidth])
 
     return (
         <>
             <table>
                 <thead>
                     <tr>
-                        <th>Currency/Current Date</th>
+                        <th>{hyphonetion ?"Currency/\nCurrent Date" : "Currency/Current Date"}</th>
                         <th>Buy</th>
                         <th>Sale</th>
                     </tr>

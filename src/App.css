@@ -172,8 +172,25 @@ select{
   flex-direction: column;
 }
 
+@media(max-width:528px){
+  .column {
+    width:100%;
+}
 
+.converterHolder {
+  width: 100%;
+}
 
+}
+
+@media(max-width:768px){
+  .arrowImg{
+    max-width: 40px;
+    max-height: 40px;
+    cursor: pointer;
+  }
+
+}
 
 
 

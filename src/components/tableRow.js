@@ -28,7 +28,7 @@ function TableRow(props) {
                 if(ix === idx){
                     return ({...i,[type]:state})
                 }else{
-                    return {... i}
+                    return {...i}
                 }
             })
             props.onEditData(data);

@@ -1,4 +1,6 @@
 import actionPromise from '../actionPromise'
+const fetch = require("node-fetch");
+
 
 export default function actionPromiseGetCurrencies() {
 
