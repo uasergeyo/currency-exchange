@@ -98,8 +98,8 @@ function Converter(props) {
     }
 
     function fractionLengthHandler(num) {
-        let [whole, decimal] = (num + "").split('.')
-        if (decimal && decimal.length > 2) {
+        let [whole, fractional] = (num + "").split('.')
+        if (fractional && fractional.length > 2) {
             return parseFloat(num).toFixed(2)
         } else {
             return num
